@@ -1,14 +1,14 @@
 import React from 'react'
-import {View} from 'react-native'
+import {Text} from 'react-native'
 
 import {Props} from './interfaces'
 import {useStyles} from './useStyles'
 
-export const BodyText: React.FC<Props> = () => {
+export const BodyText: React.FC<Props> = ({children, style}) => {
   const styles = useStyles()
   return (
-    <View style={styles.container}>
-      <></>
-    </View>
+    <Text style={[styles.text, style]}>
+      {children}
+    </Text>
   )
 }

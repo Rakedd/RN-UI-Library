@@ -6,9 +6,10 @@ import {useTheme} from '@theme'
 export const useStyles = () => {
   const theme = useTheme()
   const styles = useMemo(() => StyleSheet.create({
-    container: {
-      
+    text: {
+      color: theme.colors.text.primary,
+      fontSize: theme.fonts.size.contextual.body
     }
-  }), [theme])
+  }), [])
   return styles
 }
