@@ -9,6 +9,6 @@ export const useStyles = () => {
     container: {
       
     }
-  }), [theme])
+  }), [])
   return styles
 }
