@@ -1,4 +1,4 @@
-import { StyleProp, TextStyle } from "react-native";
+import { StyleProp, TextStyle } from "react-native"
 
 export interface Props extends BodyTextStylesType {
   children: string;
